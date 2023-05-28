@@ -1,0 +1,21 @@
+{
+  "manager": [
+    "blueprint_queries",
+    "blueprint_order.check_products_external",
+    "blueprint_order.check_invoice",
+    "blueprint_report"
+  ],
+  "loader": [
+    "blueprint_order.check_invoice",
+    "blueprint_queries.check_customer_supplier"
+  ],
+  "director": [
+    "blueprint_report.report",
+    "blueprint_report.view_rep1",
+    "blueprint_report.view_rep2",
+    "blueprint_queries.check_customer_supplier"
+  ],
+  "external": [
+    "blueprint_queries"
+  ]
+}

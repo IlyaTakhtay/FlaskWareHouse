@@ -1,0 +1,1 @@
+SELECT max(inv_id) as inv_id FROM invoice

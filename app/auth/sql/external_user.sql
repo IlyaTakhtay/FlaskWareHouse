@@ -1,0 +1,1 @@
+select user_id, NULL as user_group,sup_id from external_user where login ='$login' and password = '$password'

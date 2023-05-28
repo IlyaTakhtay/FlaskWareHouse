@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .named_list {
+            font-size:12pt;
+            color:green;
+            display: inline-block;
+            width: 500px;
+            text-align: left;
+            }
+    </style>
+</head>
+<body>
+    <h2 align="center">Меню работы с отчетами</h2>
+    <center>
+    {% for report in report_list %}
+        <form action="" method="POST">
+            <label for="create_rep" class="named_list">{{report['rep_name']}}</label>
+            <input type=submit name=create_rep id=create_rep value="Создать отчет ">
+            <input type="submit" name="view_rep" value="Смотреть отчет ">
+            <input type="hidden" name="rep_id" value="{{report['rep_id']}}">
+        </form>
+    {% endfor %}
+    </center>
+</body>
+    <div style="text-align: center">
+      <a href="{{ url_for('menu_choice') }}">Нажмите для возврата в меню</a>
+    </div>
+</html>

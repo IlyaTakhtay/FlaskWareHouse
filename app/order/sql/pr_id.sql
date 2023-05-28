@@ -1,0 +1,1 @@
+SELECT max(pr_id) as pr_id FROM product

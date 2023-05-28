@@ -1,0 +1,54 @@
+.scroll-table-body {
+    border-style: hidden;
+    border-collapse: collapse; /* IE7 and lower */
+    border-radius:0 0 10px 10px;
+	height: 430px;
+	overflow-x: auto;
+}
+.scroll-table table {
+	width:100%;
+	table-layout: fixed;
+}
+.scroll-table thead th {
+    border-style: hidden;
+	text-align: left;
+	padding: 10px 15px;
+	background: #FF7F50;
+	font-size: 14px;
+}
+.scroll-table tbody td {
+    border-style: hidden;
+	text-align: left;
+	padding: 10px 15px;
+	font-size: 14px;
+	vertical-align: top;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+<!--/* Стили для скролла */-->
+<!--::-webkit-scrollbar {-->
+<!--	width: 6px;-->
+<!--}-->
+<!--::-webkit-scrollbar-track {-->
+<!--	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);-->
+<!--}-->
+<!--::-webkit-scrollbar-thumb {-->
+<!--	box-shadow: inset 0 0 6px rgba(0,0,0,0.3);-->
+<!--}-->
+
+
+/* required css to make rounded table (below) */
+tr:first-child th:first-child {
+  border-top-left-radius: 10px;
+}
+tr:first-child th:last-child {
+  border-top-right-radius: 10px;
+}
+tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}

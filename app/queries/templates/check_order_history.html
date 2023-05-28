@@ -1,0 +1,34 @@
+
+
+<!DOCTYPE html>
+<html lang="en" style="height:100%">
+<head>
+    <meta charset="UTF-8">
+    <title>Содержание накладной</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/menu.css">
+</head>
+<body style="background-image: url(../static/image/menu.jpg); height:100%">
+    <div class="form-group" style="display: grid; text-align: center; height: 100%; align-content: center;">
+        <form action="", method ="POST">
+            <label style="color:white; font-size:28px;">Введите дату заказа</label>
+            <br><br>
+            <select name = customer>
+                <option value= time_arrive >arrive</option>
+                <option value= time_departure >departure</option>
+            </select>
+
+            <p>
+                <label for="date_one">Поиск по дате с: </label>
+                <input type="date" id="date_one" name="date_one"/>
+            </p>
+            <p>
+                <label for="date_two">Поиск по дате по: </label>
+                <input type="date" id="date_two" name="date_two"/>
+            </p>
+            <p>
+                <input type="submit" value="Отправить">
+            </p>
+        </form>
+    </div>

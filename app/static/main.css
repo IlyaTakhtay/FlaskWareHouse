@@ -1,0 +1,38 @@
+h1 {
+    font-size: 16pt;
+    color: blue;
+    font-weight: bold
+}
+h2 {
+    font-size: 14pt;
+    color: red
+}
+
+label {
+    font-size: 14pt;
+    color: red
+}
+
+td {
+    font-family: 'Verdana';
+    font-size: 12pt;
+    color: blue;
+}
+
+td.border {
+    font-family: 'Verdana';
+    font-weight: bold;
+    font-size: 12pt;
+    color: black;
+}
+
+input.submit {
+    color: blue;
+    font-weight: bold
+}
+
+table {
+    margin:auto;
+}
+
+

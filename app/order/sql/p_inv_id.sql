@@ -1,0 +1,1 @@
+SELECT max(p_inv_id) as p_inv_id FROM product_in_invoice

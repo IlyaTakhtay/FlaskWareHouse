@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Report_result</title>
+    <link type="text/css" href="static/main.css" rel="stylesheet">
+</head>
+<body>
+    <h1 align="center">Доступны отчеты за следующие даты</h1><br><br>
+    <form action="" method="POST">
+            {% for report in report_list %}
+            <center>
+                <input width="200px" type="submit" name="rep_date" id="rep_date" value="{{report}}">
+                <br></br>
+            </center>
+            {% endfor %}
+    </form>
+    <div align="center">
+        <a href="{{ url_for('menu_choice') }}">Возврат в меню</a>
+    </div>
+</body>
+</html>

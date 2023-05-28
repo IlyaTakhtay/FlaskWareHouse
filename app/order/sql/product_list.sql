@@ -1,0 +1,1 @@
+SELECT pr_id, product_name, volume FROM product;

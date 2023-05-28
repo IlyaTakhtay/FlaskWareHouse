@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block internal_user %}
+
+<link rel="stylesheet" href="../static/menu.css">
+<div class="links">
+<p align="center">
+    <a class="medium" href="{{ url_for('blueprint_queries.check_products_internal') }}">Просмотр номенклатуры склада</a><br><br>
+    <a class="medium" href="{{ url_for('blueprint_queries.check_order_history') }}">Посмотреть историю заказов</a><br><br>
+    <a class="long" href="{{ url_for('blueprint_queries.check_customer_supplier') }}">Посмотреть информацию о поставщиках и заказчиках</a><br><br>
+    <a href="{{ url_for('blueprint_report.report') }}">Работа с отчетами</a><br><br>
+    <a class="medium" href="/exit"> Нажмите для выхода из системы</a>
+</p>
+</div>
+{% endblock %}

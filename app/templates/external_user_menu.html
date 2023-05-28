@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+
+{% block external_user %}
+
+<link rel="stylesheet" href="../static/menu.css">
+
+<div class="links">
+<p align="center">
+    <a href="/order/start" style="font-size: 24px;"> Создать заказ</a>
+    <br><br>
+    <a href="{{ url_for('blueprint_order.check_products_external') }}" style="font-size: 24px;">Список товаров на складе</a>
+    <br><br>
+    <a href="/exit" style="font-size: 24px;"> Выход</a>
+</p>
+</div>
+{% endblock %}
